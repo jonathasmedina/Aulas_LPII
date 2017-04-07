@@ -3,18 +3,25 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package aula03;
+package aula05.Herança;
 
 /**
  *
  * @author Jonathas
  */
 public class Pessoa {
-
     private String nome;
     private int idade;
-    private String endereco;
 
+    Pessoa(int idade){
+        this.idade = idade + 10;        
+    }
+
+
+    Pessoa() {
+        
+    }
+    
     public String getNome() {
         return nome;
     }
@@ -30,15 +37,9 @@ public class Pessoa {
     public void setIdade(int idade) {
         this.idade = idade;
     }
-
-    public String getEndereco() {
-        return endereco;
-    }
-
-    public void setEndereco(String endereco) {
-        this.endereco = endereco;
+    
+    public void exibirNome(){
+        System.out.println("Nome");
     }
     
 }
-
-

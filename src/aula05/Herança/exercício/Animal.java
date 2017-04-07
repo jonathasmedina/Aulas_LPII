@@ -3,17 +3,23 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package aula03;
+package aula05.Herança.exercício;
 
 /**
  *
  * @author Jonathas
  */
-public class Pessoa {
-
+public class Animal {
     private String nome;
-    private int idade;
-    private String endereco;
+    protected String classe;
+    
+    public void imprime(){
+        
+    }
+    
+    public void falar(){
+        
+    }
 
     public String getNome() {
         return nome;
@@ -23,22 +29,13 @@ public class Pessoa {
         this.nome = nome;
     }
 
-    public int getIdade() {
-        return idade;
+    public String getClasse() {
+        return classe;
     }
 
-    public void setIdade(int idade) {
-        this.idade = idade;
-    }
-
-    public String getEndereco() {
-        return endereco;
-    }
-
-    public void setEndereco(String endereco) {
-        this.endereco = endereco;
+    public void setClasse(String classe) {
+        this.classe = classe;
     }
     
+    
 }
-
-

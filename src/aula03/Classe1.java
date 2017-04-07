@@ -32,8 +32,12 @@ public class Classe1 {
         
         Pessoa pessoa = new Pessoa();
         
-        pessoa.setPessoa(nome);
+        pessoa.setNome(nome);        
         pessoa.setIdade(idade);
+        
+        pessoa.setIdade(30);
+        
+        System.out.println(pessoa.getEndereco());
         
         System.out.println("Variáveis do objeto criado: " + 
                 pessoa.getPessoa() + ", " + 

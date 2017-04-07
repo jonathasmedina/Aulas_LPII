@@ -23,6 +23,8 @@ public class Principal {
         Scanner e2 = new Scanner(System.in);
 
         Cidade cidade = new Cidade();
+        
+        
         ArrayList<Bairro> listaBairros = new ArrayList<>();
 
         System.out.println("Insira o nome da cidade: ");
