@@ -17,6 +17,7 @@ public class Principal {
     public static void main(String[] args) {
         Scanner e = new Scanner(System.in);
 
+        // versaoComArrayList();
         Aluno a1 = new Aluno();
         Aluno a2 = new Aluno();
         Aluno a3 = new Aluno();
@@ -96,13 +97,13 @@ public class Principal {
         ArrayList<Aluno> alunosT2 = new ArrayList<>();
         alunosT2.add(a3);
         t2.setAlunos(alunosT2);
-        
+
         //turma 3: alunos 1 e 3
         ArrayList<Aluno> alunosT3 = new ArrayList<>();
         alunosT3.add(a1);
         alunosT3.add(a3);
         t3.setAlunos(alunosT3);
-        
+
         //vinculando turmas a um curso:
         //Turma 1 e 2 pertencem ao curso 1;
         ArrayList<Turma> turmasC1 = new ArrayList<>();
@@ -116,24 +117,24 @@ public class Principal {
         turmasC2.add(t3);
         c2.setTurmas(turmasC2);
 
+        //Turmas 1 e 3 pertencem ao curso 3
+        ArrayList<Turma> turmasC3 = new ArrayList<>();
+        turmasC3.add(t1);
+        turmasC3.add(t3);
+        c3.setTurmas(turmasC3);
+        
         System.out.println("--RELATÓRIO--");
         System.out.println("CURSO 1");
         System.out.println(c1.getNome());
         System.out.println(c1.getCodCurso());
         System.out.println(c1.getCargaHoraria());
         System.out.println("Turmas do curso 1:");
-        
-        //Turmas 1 e 3 pertencem ao curso 3
-        ArrayList<Turma> turmasC3 = new ArrayList<>();
-        turmasC3.add(t1);
-        turmasC3.add(t3);
-        c3.setTurmas(turmasC3);
 
         //percorrendo um vetor
         for (Turma turma : c1.getTurmas()) {
             System.out.println(turma.getDescricao());
         }
-        
+
         System.out.println("--RELATÓRIO--");
         System.out.println("CURSO 2");
         System.out.println(c2.getNome());
@@ -145,7 +146,7 @@ public class Principal {
         for (Turma turma : c2.getTurmas()) {
             System.out.println(turma.getDescricao());
         }
-        
+
         System.out.println("--RELATÓRIO--");
         System.out.println("CURSO 3");
         System.out.println(c3.getNome());
@@ -157,37 +158,60 @@ public class Principal {
         for (Turma turma : c3.getTurmas()) {
             System.out.println(turma.getDescricao());
         }
-        
+
         //exibindo as turmas e os alunos
-         System.out.println("--RELATÓRIO--");
+        System.out.println("--RELATÓRIO--");
         System.out.println("TURMA 1");
         System.out.println(t1.getCodigo());
-        System.out.println(t1.getDescricao());        
+        System.out.println(t1.getDescricao());
         System.out.println("Alunos da turma 1:");
-        
+
         for (Aluno aluno : t1.getAlunos()) {
             System.out.println(aluno.getNome());
         }
-        
-          System.out.println("--RELATÓRIO--");
+
+        System.out.println("--RELATÓRIO--");
         System.out.println("TURMA 2");
         System.out.println(t2.getCodigo());
-        System.out.println(t2.getDescricao());        
+        System.out.println(t2.getDescricao());
         System.out.println("Alunos da turma 2:");
-        
+
         for (Aluno aluno : t2.getAlunos()) {
             System.out.println(aluno.getNome());
         }
-        
-          System.out.println("--RELATÓRIO--");
+
+        System.out.println("--RELATÓRIO--");
         System.out.println("TURMA 3");
         System.out.println(t3.getCodigo());
-        System.out.println(t3.getDescricao());        
+        System.out.println(t3.getDescricao());
         System.out.println("Alunos da turma 3:");
-        
+
         for (Aluno aluno : t3.getAlunos()) {
             System.out.println(aluno.getNome());
         }
-
     }
+
+  /*  public static void versaoComArrayList() {
+        Scanner e = new Scanner(System.in);
+        ArrayList<Aluno> alunos = new ArrayList<Aluno>();
+        ArrayList<Turma> turmas = new ArrayList<>();
+
+        for (int i = 0; i < 3; i++) {
+            Aluno aluno = new Aluno();
+            System.out.print("nome do aluno: ");
+            aluno.setNome(e.nextLine());
+            alunos.add(aluno);
+        }
+
+        for (int i = 0; i < 3; i++) {
+            Turma turma = new Turma();
+            System.out.print("descrição da turma: ");
+            turma.setDescricao(e.nextLine());
+            turmas.add(turma);
+        }
+
+        //vincular aluno 1 e 3 a 1a turma:        
+        turmas.get(0).setAlunos();
+
+    }*/
 }
