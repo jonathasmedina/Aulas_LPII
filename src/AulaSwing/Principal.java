@@ -3,22 +3,12 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package ListaExercíciosT1.ex1;
+package AulaSwing;
 
 /**
  *
  * @author Jonathas
  */
-public class Aluno {
-    private String nome;
-
-    public String getNome() {
-        return nome;
-    }
-
-    public void setNome(String nome) {
-        this.nome = nome;
-    }
-
+public class Principal {
     
 }

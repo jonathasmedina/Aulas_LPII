@@ -17,7 +17,6 @@ public class Principal {
     public static void main(String[] args) {
         Scanner e = new Scanner(System.in);
 
-        // versaoComArrayList();
         Aluno a1 = new Aluno();
         Aluno a2 = new Aluno();
         Aluno a3 = new Aluno();
@@ -122,7 +121,7 @@ public class Principal {
         turmasC3.add(t1);
         turmasC3.add(t3);
         c3.setTurmas(turmasC3);
-        
+
         System.out.println("--RELATÓRIO--");
         System.out.println("CURSO 1");
         System.out.println(c1.getNome());
@@ -189,11 +188,12 @@ public class Principal {
         for (Aluno aluno : t3.getAlunos()) {
             System.out.println(aluno.getNome());
         }
+        
     }
 
-  /*  public static void versaoComArrayList() {
+    public static void versaoComArrayList() {
         Scanner e = new Scanner(System.in);
-        ArrayList<Aluno> alunos = new ArrayList<Aluno>();
+        ArrayList<Aluno> alunos = new ArrayList<>();
         ArrayList<Turma> turmas = new ArrayList<>();
 
         for (int i = 0; i < 3; i++) {
@@ -210,8 +210,25 @@ public class Principal {
             turmas.add(turma);
         }
 
-        //vincular aluno 1 e 3 a 1a turma:        
-        turmas.get(0).setAlunos();
+        alunos.clear();
 
-    }*/
+        Aluno aluno = new Aluno();
+        System.out.print("nome do aluno: ");
+        aluno.setNome(e.nextLine());
+        alunos.add(aluno);
+
+        System.out.println(alunos.get(0).getNome());
+
+        turmas.clear();
+        Turma turma1 = new Turma();
+        System.out.print("turma desc: ");
+        turma1.setDescricao(e.nextLine());
+        turmas.add(turma1);
+
+        System.out.println(turmas.get(0).getDescricao());
+
+        
+       
+
+    }
 }

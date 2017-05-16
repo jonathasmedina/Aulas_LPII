@@ -3,22 +3,15 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package ListaExercíciosT1.ex1;
+package ListaExercíciosT1.ex3.simplificado;
 
 /**
  *
  * @author Jonathas
  */
-public class Aluno {
-    private String nome;
-
-    public String getNome() {
-        return nome;
-    }
-
-    public void setNome(String nome) {
-        this.nome = nome;
-    }
-
+public class Classe {
+     public  void somar(){
+         
+     }
     
 }

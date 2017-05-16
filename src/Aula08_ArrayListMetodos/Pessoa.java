@@ -3,14 +3,15 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package ListaExercíciosT1.ex1;
+package Aula08_ArrayListMetodos;
 
 /**
  *
  * @author Jonathas
  */
-public class Aluno {
+public class Pessoa {
     private String nome;
+    private int idade;
 
     public String getNome() {
         return nome;
@@ -20,5 +21,13 @@ public class Aluno {
         this.nome = nome;
     }
 
+    public int getIdade() {
+        return idade;
+    }
+
+    public void setIdade(int idade) {
+        this.idade = idade;
+    }
+    
     
 }
