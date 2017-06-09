@@ -151,6 +151,10 @@ public class Principal {
         arrayCias.add(cia1);
         arrayCias.add(cia2);
 
+        
+        
+        
+        
         for (Companhia cia : arrayCias) { //percorrendo array de Companhias
             System.out.println("--Companhia--");
             System.out.println(cia.getNome());
