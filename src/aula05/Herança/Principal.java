@@ -15,8 +15,10 @@ public class Principal {
          Pessoa p1 = new Pessoa(10);
          Pessoa p2 = new Pessoa();
          
-         Funcionario f = new Funcionario(35);
          
+         
+         Funcionario f = (Funcionario) new Pessoa(10);
+         System.out.println(f.getIdade());
          
          p2.setIdade(10);
          

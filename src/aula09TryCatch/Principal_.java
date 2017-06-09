@@ -33,6 +33,7 @@ public class Principal_ {
 
                 System.out.print("Opção: ");
                 op = entrada.nextInt();
+                
                 if (op >= 1 && op <= 4) {
                     System.out.print("Insira o primeiro número: ");
                     c.setN1(entrada.nextFloat());
